@@ -1,2 +1,3 @@
 # laby
-This is labyrinth game
+This is labyrinth game  
+sample text
