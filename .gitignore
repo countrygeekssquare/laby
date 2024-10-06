@@ -1,0 +1,17 @@
+# ビルド成果物
+bin/
+obj/
+
+# ユーザ固有のVisual Studioファイル
+*.user
+*.suo
+*.vcxproj.user
+
+# Visual Studioの一時ファイル
+.vs/
+
+# NuGetパッケージディレクトリ
+packages/
+
+# 一時的なファイル
+*.log
