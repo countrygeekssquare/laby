@@ -1,7 +1,3 @@
-# 設計図メモ
-
-## フローチャート
-
 ```mermaid
 flowchart TD
 
