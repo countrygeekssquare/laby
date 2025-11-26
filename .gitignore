@@ -1,17 +1,20 @@
-# �r���h���ʕ�
+# ビルド成果物
 bin/
 obj/
 
-# ���[�U�ŗL��Visual Studio�t�@�C��
+# ユーザ固有のVisual Studioファイル
 *.user
 *.suo
 *.vcxproj.user
 
-# Visual Studio�̈ꎞ�t�@�C��
+# Visual Studioの一時ファイル
 .vs/
 
-# NuGet�p�b�P�[�W�f�B���N�g��
+# NuGetパッケージディレクトリ
 packages/
 
-# �ꎞ�I�ȃt�@�C��
+# 一時的なファイル
 *.log
+
+# Docの画像ファイル
+Doc/design/*.png
