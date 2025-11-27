@@ -1,14 +1,14 @@
 ﻿using System;
-using Hello;
+using HelloLib;
 
 namespace Hello
 {
-    class main
+    class Hello
     {
         static void Main(string[] args)
         {
-            var greeter = new Hello();
-            Console.WriteLine(greeter.Greeting());
+            var greeter = new HelloService();
+            Console.WriteLine(greeter.Greeting("world"));
         }
     }
 }
