@@ -23,7 +23,7 @@ jobs:
         dotnet-version: '9.0.x' # プロジェクトに合わせて変更
 
     - name: Debug workflow
-      run: pwd
+      run: pwd && ls
 
     # ソースコードのビルド
     - name: Build project
