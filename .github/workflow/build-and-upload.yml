@@ -1,0 +1,32 @@
+name: Build, Test, and Upload C# Project
+
+on:
+  push:
+  pull_request:
+    # 任意のブランチからのPR時に実行
+    branches:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # リポジトリをチェックアウト
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # .NET Core SDKをセットアップ
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '9.0.x' # プロジェクトに合わせて変更
+
+    # ソースコードのビルド
+    - name: Build project
+      run: dotnet build ./src --configuration Release --output ./build
+
+    # テストの実行
+    - name: Run tests
+      run: dotnet test
+
