@@ -1,7 +1,9 @@
-name: Build, Test, and Upload C# Project
+name: Build and Test C# Project
 
 on:
   push:
+    branches:
+      - main
   pull_request:
     # 任意のブランチからのPR時に実行
     branches:
