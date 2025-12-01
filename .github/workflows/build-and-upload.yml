@@ -1,11 +1,11 @@
 name: Build and Test C# Project
 
+# mainへpushまたは任意のブランチのPRが更新されたとき
 on:
   push:
     branches:
       - main
   pull_request:
-    # 任意のブランチからのPR時に実行
     branches:
       - '*'
 
