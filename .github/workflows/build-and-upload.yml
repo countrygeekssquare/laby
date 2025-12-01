@@ -27,7 +27,7 @@ jobs:
 
     # ソースコードのビルド
     - name: Build project
-      run: dotnet build ./src --configuration Release --output ./build
+      run: dotnet build --configuration Release
 
     # テストの実行
     - name: Run tests
