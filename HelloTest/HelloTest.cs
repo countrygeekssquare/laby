@@ -1,24 +1,24 @@
 using HelloLib;
-using Xunit;
+using NUnit.Framework;
 
 namespace HelloTest
 {
     public class HelloTest
     {
-        [Fact]
-        public void greetingTest()
+        [TestCase]
+        public void GreetingTest()
         {
             var hello = new HelloService();
             var greeting = hello.Greeting("CSharp");
-            Assert.Equal("Hello CSharp!", greeting);
+            Assert.That(greeting, Is.EqualTo("Hello CSharp!"));
         }
 
-        [Fact]
-        public void greetingDefaultTest()
+        [TestCase]
+        public void GreetingDefaultTest()
         {
             var hello = new HelloService();
             var greeting = hello.Greeting();
-            Assert.Equal("Hello world!", greeting);
+            Assert.That(greeting, Is.EqualTo("Hello world!"));
         }
     }
 }
